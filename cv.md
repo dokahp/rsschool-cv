@@ -22,3 +22,31 @@ Dreamer! Demanding of himself, but loyal to others. I like to study and I can ca
 + React (basics, learning now)
 + Git
 + VSCode
+
+## Code Example
+
+Side effect for functional component in React. Function returns a current weather forecast from dedicated api service "openweathermap"
+```
+useEffect(() => {
+    function getCurrentWeather() {
+      axios
+        .get(
+          `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`
+        )
+        .then((response) => {
+          setCurrentWeather({
+            temp: Math.round(response.data.main.temp),
+            icon: response.data.weather[0].icon,
+            description: response.data.weather[0].description,
+          });
+        });
+    }
+    // calls function for first time data
+    getCurrentWeather();
+    // calls every one minute to update data
+    const interval = setInterval(() => {
+      getCurrentWeather();
+    }, 60000);
+    return () => clearInterval(interval);
+  }, [setCurrentWeather]);
+```
