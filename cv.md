@@ -17,7 +17,7 @@ Dreamer! Demanding of himself, but loyal to others. I like to study and I can ca
 + HTML5
 + CSS3
 + JavaScript
-+ jQuery
++ jQuery basics
 + Bootstrap
 + React (basics, learning now)
 + Git
@@ -25,7 +25,7 @@ Dreamer! Demanding of himself, but loyal to others. I like to study and I can ca
 
 ## Code Example
 
-Side effect for functional component in React. Function returns a current weather forecast from dedicated api service "openweathermap"
+Side effect for functional component in React. Function returns a current weather forecast from dedicated api service "openweathermap".
 ```
 useEffect(() => {
     function getCurrentWeather() {
@@ -50,3 +50,15 @@ useEffect(() => {
     return () => clearInterval(interval);
   }, [setCurrentWeather]);
 ```
+
+## Education
+
++ College of Business and Law (specialization: software engineer)
++ Belarusian State Economic University:
+    + bachelor's degree
+    + masters degree
+
++ Online Courses:
+    + JetBrains Academy (Python Full Course)
+    + freeCodeCamp (HTML, CSS, JS course)
+    + learn.javascript.ru
