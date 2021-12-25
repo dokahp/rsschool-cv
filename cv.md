@@ -9,11 +9,12 @@
 + email: vitali.dreko@gmail.com
 + github: https://github.com/dokahp
 
-
 ## About Me
+
 Dreamer! Demanding of himself, but loyal to others. I like to study and I can call myself a greedy person when it comes to knowledge. I'm calm and patient person, but in critical moment I can stands up for myself. I chose the frontend, because I am a visual and I like that I can see the result of my work immediately. I will always continue study, to learn new things in order to achieve my main goal - to become a great professional!
 
 ## Skills
+
 + HTML5
 + CSS3
 + JavaScript
@@ -62,3 +63,7 @@ useEffect(() => {
     + JetBrains Academy (Python Full Course)
     + freeCodeCamp (HTML, CSS, JS course)
     + learn.javascript.ru
+
+## English level
+
+A2, according test at Streamline https://test.str.by
