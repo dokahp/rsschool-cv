@@ -25,12 +25,12 @@ body {
   background-color: var(--whiteBackground) !important;
 }
 h2 {
-    font-family: var(--fontFamily);
-    font-size: var(--heading2);
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-    color: #2b2b2b;
+  font-family: var(--fontFamily);
+  font-size: var(--heading2);
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: #2b2b2b;
 }
 header {
   background-color: var(--white);
@@ -81,7 +81,7 @@ header > nav > ul > li:hover .nav-notification {
 /* START MAIN */
 /* START ASIDE */
 aside {
-    max-height: fit-content;
+  max-height: fit-content;
   background-color: var(--white);
   border-radius: 6px;
 }
@@ -138,6 +138,16 @@ aside > .skills {
   line-height: 24px;
   color: var(--paragraphFont);
 }
+.languages > h4 {
+  font-family: var(--fontFamily);
+  font-size: var(--heading4);
+}
+.languages > div > span {
+  font-family: var(--fontFamily);
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--paragraphFont);
+}
 .progress-external {
   width: 100%;
   height: 4px;
@@ -169,6 +179,9 @@ aside > .skills {
   background: #ffb400;
   border-radius: 30px;
 }
+.extra-skills {
+    border-bottom: 1.5px solid #f0f0f6;
+}
 .extra-skills > h4 {
   font-family: var(--fontFamily);
   font-size: var(--heading4);
@@ -187,7 +200,7 @@ aside > .skills {
 /* START ABOUT ME */
 .about-me {
   position: relative;
-  padding: 60px;
+  padding: 70px;
   background-color: var(--white);
   border-radius: 6px;
   margin-bottom: 6px;
@@ -298,29 +311,71 @@ aside > .skills {
 /* END OF ABOUT ME BLOCK */
 /* EDUCATION */
 .education-main {
-    margin-top: 100px;
+  margin-top: 75px;
 }
 .terms-training {
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 10px;
-    color: #FFFFFF;
-    background: #FFB400;
-    border-radius: 1px;
-    padding: 4px 7px;
-    text-align: center;
-    margin-left: 21px;
-    height: 18px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background: #ffb400;
+  border-radius: 1px;
+  padding: 4px 7px;
+  text-align: center;
+  margin-left: 21px;
+  height: 18px;
 }
 .education-block {
-    padding: 47px 29px 11px 37px;
-    background: #fff;
-    border-bottom: 1.5px solid #F0F0F6;
+  padding: 47px 29px 11px 37px;
+  background: #fff;
+  border-bottom: 1.5px solid #f0f0f6;
 }
 .education-block-last {
-    padding: 47px 29px 11px 37px;
-    background: #fff;
+  padding: 47px 29px 11px 37px;
+  background: #fff;
 }
-.education-block p, .education-block-last p {
-    text-align: left;
+.education-block p,
+.education-block-last p {
+  text-align: left;
+}
+.paragraph-font {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--paragraphFont);
+}
+.heading2 {
+  font-family: var(--fontFamily);
+  font-size: var(--heading2);
+  font-weight: 700;
+  color: #2b2b2b;
+  margin: 70px 0 25px 0;
+}
+pre {
+  margin-bottom: 0 !important;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  max-width: 440px;
+  text-align: center;
+}
+.code-block {
+  background-color: var(--white);
+  border-radius: 6px;
+  color: #afafff;
+}
+.defenition {
+  color: #b45ea4;
+}
+.variable {
+  color: #78bb65;
+}
+.gold-parentheses {
+  color: gold;
+}
+.return {
+  color: #eb3c54;
 }

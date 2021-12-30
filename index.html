@@ -172,6 +172,17 @@
                             <li class="paragraph-font">jQuery</li>
                         </ul>
                     </section>
+                    <section class="languages">
+                        <h4 class="my-2">Languages</h4>
+                        <div class="d-flex justify-content-between my-1">
+                            <span>Russian</span>
+                            <span>Native</span>
+                        </div>
+                        <div class="d-flex justify-content-between my-1">
+                            <span>English</span>
+                            <span>A2</span>
+                        </div>
+                    </section>
                 </aside>
                 <div class="col-9">
                     <section class="about-me">
@@ -191,17 +202,45 @@
                         </p>
                         <div class="about-me-buttons d-flex justify-content-around">
                             <a href="mailto:vitali.dreko@gmail.com"><span>HIRE ME</span></a>
-                            <a href="https://dokahp.github.io/rsschool-cv/cv" target="_blank"><span>DOWNLOAD CV</span></a>
+                            <a href="https://dokahp.github.io/rsschool-cv/cv" target="_blank"><span>DOWNLOAD
+                                    CV</span></a>
                         </div>
                     </section>
-                    
+                    <section class="code-example">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h2 class="heading2">Code Example</h2>
+                            <p class="paragraph-font description">Solution that strips all text that follows any of a set of comment markers passed in.
+                                Any whitespace at the end of the line should also be stripped out. </p>
+                        </div>
+                        <div class="code-block">
+<pre>
+    <code>
+
+
+    <span style="color: blueviolet;">function</span> <span style="color: khaki;">solution</span><span class="gold-parentheses">(</span><span style="color: mediumturquoise;">input, markers</span><span class="gold-parentheses">)</span> <span class="gold-parentheses">{</span>
+        <span class="defenition">let</span> <span class="variable">arr</span> = input.split('\n').map(el => <span class="gold-parentheses">{</span>
+        <span class="defenition">let</span> <span class="variable">strEl</span> = String(el)
+        <span class="defenition">let</span> <span class="variable">newElem</span> = [strEl]
+        <span class="variable">markers</span>.forEach(marker => <span class="gold-parentheses">{</span>
+            if (strEl.includes(marker)) <span class="gold-parentheses">{</span>
+                <span class="variable">newElem</span> = [...newElem, strEl.slice(0, strEl.indexOf(marker)).trim()]
+            <span class="gold-parentheses">}</span>
+        <span class="gold-parentheses">}</span>)
+        <span class="return">return</span> <span class="variable">newElem</span>.sort((a, b) => a.length > b.length)[0]
+        <span class="gold-parentheses">}</span>)
+        <span class="return">return</span> <span class="variable">arr</span>.join('\n')
+    <span class="gold-parentheses">}</span>;
+    </code>
+</pre>
+                            </div>
+                    </section>
+                </div>
             </div>
-    </div>
+            
+        </main>
+        <footer>
 
-    </main>
-    <footer>
-
-    </footer>
+        </footer>
     </div>
 </body>
 
