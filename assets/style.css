@@ -173,7 +173,11 @@ aside > .skills {
 .extra-skills > ul > li {
   padding-left: 15px;
 }
+/* END OF ASIDE BLOCK */
+/* START OF MAIN BLOCK */
+/* START ABOUT ME */
 .about-me {
+  position: relative;
   padding: 60px;
   background-color: var(--white);
   border-radius: 6px;
@@ -188,3 +192,96 @@ aside > .skills {
 .about-me > h1 > span {
   color: var(--yellow);
 }
+.about-me > p {
+  text-align: right;
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--paragraphFont);
+}
+.about-me-buttons > a {
+  position: relative;
+  margin: 10px;
+  padding: 16px 32px;
+  background-color: var(--yellow);
+  font-family: var(--fontFamily);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2b2b2b;
+  border-radius: 4px;
+}
+.about-me-buttons > a > span {
+  z-index: 3;
+  position: relative;
+}
+.about-me-buttons > a:hover {
+  color: #2b2b2b;
+}
+.about-me-buttons > a:hover::after {
+  width: 100%;
+  left: 0;
+  background: orange;
+  transition: width ease-in-out 0.5s;
+}
+.about-me-buttons > a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0px;
+  border-radius: 5px;
+  z-index: 1;
+}
+/* DECOR ELEMENTS OF I'AM BLOCK */
+.circle-decor {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.circle-pos1 {
+  border: 2px solid rgba(255, 180, 0, 0.8);
+  top: 30px;
+  left: 40px;
+}
+.circle-pos2 {
+  border: 2px solid rgba(255, 180, 0, 0.8);
+  bottom: 71px;
+  left: 558px;
+}
+.circle-pos3 {
+  border: 2px solid rgba(5, 255, 0, 0.8);
+  bottom: 30px;
+  left: 88px;
+}
+.circle-pos4 {
+  border: 2px solid rgba(5, 255, 0, 0.8);
+  top: 52px;
+  left: 520px;
+}
+.square {
+  transform: rotate(26.05deg);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+.square-pos1 {
+  border: 2px solid rgba(0, 71, 255, 0.8);
+  left: 373px;
+  bottom: 112px;
+}
+.square-pos2 {
+  border: 2px solid rgba(255, 180, 0, 0.8);
+  top: 70px;
+  right: 53px;
+}
+.square-pos3 {
+  border: 2px solid rgba(255, 46, 0, 0.8);
+  bottom: 24px;
+  right: 33px;
+}
+/* END OF DECOR ELEMENTS */
