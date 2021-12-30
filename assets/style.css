@@ -24,6 +24,14 @@ body {
   font-family: var(--fontFamily);
   background-color: var(--whiteBackground) !important;
 }
+h2 {
+    font-family: var(--fontFamily);
+    font-size: var(--heading2);
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #2b2b2b;
+}
 header {
   background-color: var(--white);
   border-bottom-left-radius: 6px;
@@ -73,6 +81,7 @@ header > nav > ul > li:hover .nav-notification {
 /* START MAIN */
 /* START ASIDE */
 aside {
+    max-height: fit-content;
   background-color: var(--white);
   border-radius: 6px;
 }
@@ -85,7 +94,7 @@ aside {
   padding-bottom: 25px;
   border-bottom: 1.5px solid #f0f0f6;
 }
-.profile > h2 {
+.profile > h4 {
   font-family: var(--fontFamily);
   font-size: var(--heading4);
   font-weight: 500;
@@ -181,6 +190,7 @@ aside > .skills {
   padding: 60px;
   background-color: var(--white);
   border-radius: 6px;
+  margin-bottom: 6px;
 }
 .about-me > h1 {
   font-family: var(--fontFamily);
@@ -285,3 +295,32 @@ aside > .skills {
   right: 33px;
 }
 /* END OF DECOR ELEMENTS */
+/* END OF ABOUT ME BLOCK */
+/* EDUCATION */
+.education-main {
+    margin-top: 100px;
+}
+.terms-training {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    background: #FFB400;
+    border-radius: 1px;
+    padding: 4px 7px;
+    text-align: center;
+    margin-left: 21px;
+    height: 18px;
+}
+.education-block {
+    padding: 47px 29px 11px 37px;
+    background: #fff;
+    border-bottom: 1.5px solid #F0F0F6;
+}
+.education-block-last {
+    padding: 47px 29px 11px 37px;
+    background: #fff;
+}
+.education-block p, .education-block-last p {
+    text-align: left;
+}
