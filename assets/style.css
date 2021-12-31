@@ -379,3 +379,21 @@ pre {
 .return {
   color: #eb3c54;
 }
+/* END */
+.projects {
+    margin-top: 70px;
+}
+.blog-wrapper {
+    background: #fff;
+    padding: 25px 17px 17px 25px;
+}
+.blog-wrapper a, .blog-wrapper a:hover {
+    color: #FFB400;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.projects img {
+    width: 100%;
+    height: 312px;
+}
