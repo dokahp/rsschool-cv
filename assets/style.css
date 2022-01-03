@@ -112,13 +112,21 @@ aside {
   border-radius: 50%;
   align-self: center;
 }
-aside .contacts {
-  padding: 25px 0;
+.contacts {
+  padding: 20px 0;
   border-bottom: 1.5px solid #f0f0f6;
   font-family: var(--fontFamily);
   font-size: 15px;
   line-height: 24px;
   color: #2b2b2b;
+}
+.contacts > h4 {
+    font-family: var(--fontFamily);
+    font-size: var(--heading4);
+} 
+.contacts > ul, .skills > ul, .languages > ul {
+    margin-left: 0;
+    padding-left: 0;
 }
 .yellow-box {
   background: #ffb400;
@@ -180,7 +188,7 @@ aside > .skills {
   border-radius: 30px;
 }
 .extra-skills {
-    border-bottom: 1.5px solid #f0f0f6;
+  border-bottom: 1.5px solid #f0f0f6;
 }
 .extra-skills > h4 {
   font-family: var(--fontFamily);
@@ -216,12 +224,15 @@ aside > .skills {
   color: var(--yellow);
 }
 .about-me > p {
-  text-align: right;
+  text-align: justify;
   font-family: var(--fontFamily);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: var(--paragraphFont);
+}
+.about-me-buttons {
+    flex-wrap: wrap;
 }
 .about-me-buttons > a {
   position: relative;
@@ -381,34 +392,35 @@ pre {
 }
 /* END */
 .projects {
-    margin-top: 70px;
-    margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 .blog-wrapper {
-    background: #fff;
-    padding: 25px 17px 17px 25px;
+  background: #fff;
+  padding: 25px 17px 17px 25px;
 }
-.blog-wrapper a, .blog-wrapper a:hover {
-    color: #FFB400;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+.blog-wrapper a,
+.blog-wrapper a:hover {
+  color: #ffb400;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 .projects img {
-    width: 100%;
-    height: 312px;
+  width: 100%;
+  height: 312px;
 }
 footer {
-    background-color: var(--white);
-    border-radius: 6px;
+  background-color: var(--white);
+  border-radius: 6px;
 }
 footer > nav > ul {
-    margin-top: 1rem !important;
+  margin-top: 1rem !important;
 }
 footer > nav > ul > li {
-    padding: 0 50px;
+  padding: 0 50px;
 }
 footer img {
-    height: 30px;
-    width: auto;
+  height: 30px;
+  width: auto;
 }
